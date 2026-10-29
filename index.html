@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phoutthasone SOULIYAVONG | Senior Back-End Developer</title>
+  <title data-i18n="meta.title">Phoutthasone SOULIYAVONG | Senior Back-End Developer</title>
   <meta name="description" content="Resume of Phoutthasone SOULIYAVONG (Pao) – Senior Back-End Developer from Vientiane, Laos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,15 +16,21 @@
   <header class="nav">
     <div class="container nav-inner">
       <a href="#home" class="logo">Pao<span>.</span></a>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-      <label for="menu-toggle" class="menu-btn" aria-label="Open menu"><span></span></label>
-      <nav class="menu">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="btn btn-small">Contact</a>
-      </nav>
+      <div class="nav-right">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="lo">ລາວ</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn" aria-label="Open menu"><span></span></label>
+        <nav class="menu">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#education" data-i18n="nav.education">Education</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#contact" class="btn btn-small" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -32,16 +38,16 @@
   <section id="home" class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <p class="eyebrow">Hello, I'm</p>
-        <h1>Phoutthasone <span>SOULIYAVONG</span></h1>
-        <p class="role">Senior Back-End Developer</p>
-        <p class="lead">
+        <p class="eyebrow" data-i18n="hero.hello">Hello, I'm</p>
+        <h1 data-i18n="hero.name">Phoutthasone <span>SOULIYAVONG</span></h1>
+        <p class="role" data-i18n="hero.role">Senior Back-End Developer</p>
+        <p class="lead" data-i18n="hero.lead">
           Bachelor's degree in Computer Science from the National University of Laos.
           I build APIs, USSD services and database systems with JavaScript and Node.js.
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn">Contact me</a>
-          <a href="#experience" class="btn btn-outline">View experience</a>
+          <a href="#contact" class="btn" data-i18n="hero.contact">Contact me</a>
+          <a href="#experience" class="btn btn-outline" data-i18n="hero.viewExp">View experience</a>
         </div>
       </div>
       <div class="hero-photo">
@@ -57,11 +63,11 @@
   <!-- About -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">About <span>Me</span></h2>
+      <h2 class="section-title" data-i18n="about.title">About <span>Me</span></h2>
       <div class="about-grid">
         <div class="card">
-          <h3>Objective</h3>
-          <p>
+          <h3 data-i18n="about.objectiveTitle">Objective</h3>
+          <p data-i18n="about.objective">
             Hello, my name is Phoutthasone SOULIYAVONG and my nickname is Pao, 30 years old.
             I'm from Mark Nao Village, Pak Ngum District, Vientiane Capital, and now live in
             Dong Kham Chang Village, Hart Saiy Fong District, Vientiane Capital.
@@ -72,19 +78,19 @@
           </p>
         </div>
         <div class="card">
-          <h3>Profile</h3>
+          <h3 data-i18n="about.profileTitle">Profile</h3>
           <ul class="info-list">
-            <li><span>Name</span>Phoutthasone</li>
-            <li><span>Surname</span>SOULIYAVONG</li>
-            <li><span>Nickname</span>Pao</li>
-            <li><span>Gender</span>Male</li>
-            <li><span>Date of birth</span>29 Jul 1996</li>
-            <li><span>Status</span>Married</li>
+            <li><span data-i18n="profile.name">Name</span><b data-i18n="profile.nameVal">Phoutthasone</b></li>
+            <li><span data-i18n="profile.surname">Surname</span><b data-i18n="profile.surnameVal">SOULIYAVONG</b></li>
+            <li><span data-i18n="profile.nickname">Nickname</span><b data-i18n="profile.nicknameVal">Pao</b></li>
+            <li><span data-i18n="profile.gender">Gender</span><b data-i18n="profile.genderVal">Male</b></li>
+            <li><span data-i18n="profile.dob">Date of birth</span><b data-i18n="profile.dobVal">29 Jul 1996</b></li>
+            <li><span data-i18n="profile.status">Status</span><b data-i18n="profile.statusVal">Married</b></li>
           </ul>
-          <h3 class="mt">Hobbies</h3>
+          <h3 class="mt" data-i18n="about.hobbiesTitle">Hobbies</h3>
           <div class="chips">
-            <span class="chip">⚽ Play football</span>
-            <span class="chip">🎮 Play game</span>
+            <span class="chip" data-i18n="hobby.football">⚽ Play football</span>
+            <span class="chip" data-i18n="hobby.game">🎮 Play game</span>
           </div>
         </div>
       </div>
@@ -94,22 +100,22 @@
   <!-- Experience -->
   <section id="experience" class="section section-tint">
     <div class="container">
-      <h2 class="section-title">Work <span>Experience</span></h2>
+      <h2 class="section-title" data-i18n="exp.title">Work <span>Experience</span></h2>
       <div class="timeline">
         <article class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="card">
             <div class="item-head">
               <div>
-                <h3>TPLUS Company</h3>
-                <p class="sub">Senior Back-End</p>
+                <h3 data-i18n="exp.tplus.company">TPLUS Company</h3>
+                <p class="sub" data-i18n="exp.tplus.role">Senior Back-End</p>
               </div>
-              <span class="date">2023 – Present</span>
+              <span class="date" data-i18n="exp.tplus.date">2023 – Present</span>
             </div>
             <ul class="bullets">
-              <li>Database analysis</li>
-              <li>Develop API (JavaScript)</li>
-              <li>Develop USSD (JavaScript)</li>
+              <li data-i18n="exp.dbAnalysis">Database analysis</li>
+              <li data-i18n="exp.tplus.api">Develop API (JavaScript)</li>
+              <li data-i18n="exp.tplus.ussd">Develop USSD (JavaScript)</li>
             </ul>
           </div>
         </article>
@@ -118,15 +124,15 @@
           <div class="card">
             <div class="item-head">
               <div>
-                <h3>S-Advance Software Co., Ltd</h3>
-                <p class="sub">Programmer</p>
+                <h3 data-i18n="exp.sadv.company">S-Advance Software Co., Ltd</h3>
+                <p class="sub" data-i18n="exp.sadv.role">Programmer</p>
               </div>
               <span class="date">2018 – 2021</span>
             </div>
             <ul class="bullets">
-              <li>Database analysis</li>
-              <li>Use VB.net to create an accounting system project</li>
-              <li>Write reports with SAP Crystal Reports</li>
+              <li data-i18n="exp.dbAnalysis">Database analysis</li>
+              <li data-i18n="exp.sadv.vb">Use VB.net to create an accounting system project</li>
+              <li data-i18n="exp.sadv.report">Write reports with SAP Crystal Reports</li>
             </ul>
           </div>
         </article>
@@ -137,22 +143,22 @@
   <!-- Education -->
   <section id="education" class="section">
     <div class="container">
-      <h2 class="section-title"><span>Education</span></h2>
+      <h2 class="section-title" data-i18n="edu.title"><span>Education</span></h2>
       <div class="edu-grid">
         <div class="card edu-card highlight">
           <span class="date">2020 – 2021</span>
-          <h3>National University of Laos</h3>
-          <p class="sub">Bachelor's degree</p>
-          <p>Majoring in: Computer Science</p>
+          <h3 data-i18n="edu.nuol">National University of Laos</h3>
+          <p class="sub" data-i18n="edu.degree">Bachelor's degree</p>
+          <p data-i18n="edu.major">Majoring in: Computer Science</p>
           <p class="gpa">CGPA <strong>3.43</strong></p>
         </div>
         <div class="card edu-card">
           <span class="date">2016 – 2018</span>
-          <h3>Vientiane Hanoi Friendship Technical Vocational College</h3>
+          <h3 data-i18n="edu.college">Vientiane Hanoi Friendship Technical Vocational College</h3>
         </div>
         <div class="card edu-card">
           <span class="date">2008 – 2014</span>
-          <h3>Mark Nao School</h3>
+          <h3 data-i18n="edu.school">Mark Nao School</h3>
         </div>
       </div>
     </div>
@@ -161,11 +167,11 @@
   <!-- Skills -->
   <section id="skills" class="section section-tint">
     <div class="container">
-      <h2 class="section-title"><span>Skills</span></h2>
+      <h2 class="section-title" data-i18n="skills.title"><span>Skills</span></h2>
       <div class="skills-grid">
         <div class="card skill-card">
           <div class="icon">&lt;/&gt;</div>
-          <h3>Programming</h3>
+          <h3 data-i18n="skills.programming">Programming</h3>
           <div class="chips">
             <span class="chip">VB.net</span>
             <span class="chip">SAP Crystal Report</span>
@@ -176,7 +182,7 @@
         </div>
         <div class="card skill-card">
           <div class="icon">DB</div>
-          <h3>Database</h3>
+          <h3 data-i18n="skills.database">Database</h3>
           <div class="chips">
             <span class="chip">SQL Server</span>
             <span class="chip">MySQL</span>
@@ -186,20 +192,20 @@
         </div>
         <div class="card skill-card">
           <div class="icon">⚙</div>
-          <h3>DevOps &amp; Design</h3>
+          <h3 data-i18n="skills.devops">DevOps &amp; Design</h3>
           <div class="chips">
             <span class="chip">PM2</span>
             <span class="chip">Docker</span>
-            <span class="chip">System analysis and design</span>
+            <span class="chip" data-i18n="skills.sad">System analysis and design</span>
           </div>
         </div>
         <div class="card skill-card">
           <div class="icon">Aa</div>
-          <h3>Language</h3>
+          <h3 data-i18n="skills.language">Language</h3>
           <div class="chips">
-            <span class="chip">Lao</span>
-            <span class="chip">Thai</span>
-            <span class="chip">English (Beginner)</span>
+            <span class="chip" data-i18n="skills.lao">Lao</span>
+            <span class="chip" data-i18n="skills.thai">Thai</span>
+            <span class="chip" data-i18n="skills.english">English (Beginner)</span>
           </div>
         </div>
       </div>
@@ -210,16 +216,16 @@
   <section id="contact" class="section">
     <div class="container">
       <div class="contact-box">
-        <h2>Let's work together</h2>
-        <p>Feel free to contact me by phone or email.</p>
+        <h2 data-i18n="contact.title">Let's work together</h2>
+        <p data-i18n="contact.text">Feel free to contact me by phone or email.</p>
         <div class="contact-links">
           <a href="tel:+8562077775969" class="contact-item">
             <span class="c-icon">📞</span>
-            <span><small>Phone</small>020 7777 5969</span>
+            <span><small data-i18n="contact.phone">Phone</small>020 7777 5969</span>
           </a>
           <a href="mailto:Phoutthasone999SV@gmail.com" class="contact-item">
             <span class="c-icon">✉️</span>
-            <span><small>Email</small>Phoutthasone999SV@gmail.com</span>
+            <span><small data-i18n="contact.email">Email</small>Phoutthasone999SV@gmail.com</span>
           </a>
         </div>
       </div>
@@ -227,8 +233,9 @@
   </section>
 
   <footer class="footer">
-    <p>© 2026 Phoutthasone SOULIYAVONG · Vientiane Capital, Laos</p>
+    <p data-i18n="footer">© 2026 Phoutthasone SOULIYAVONG · Vientiane Capital, Laos</p>
   </footer>
 
+  <script src="lang.js"></script>
 </body>
 </html>
